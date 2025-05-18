@@ -38,6 +38,8 @@ This project provides a **content moderation API** that detects and filters offe
   6 epochs, AdamW optimizer (learning rate 1e-5)
 - **Batch Size:**  
   16 (training), 32 (validation)
+- **Hugging Face Model:**  
+  [jm12312/Hate-Speech-And-Offensive-Language](https://huggingface.co/jm12312/Hate-Speech-And-Offensive-Language)
 
 **Performance:**
 
