@@ -1,5 +1,37 @@
 # Context-Aware-Content-Sanitizer
 
+## Overview  
+This project provides a content moderation API that detects and filters offensive language in text, offering three distinct filtering modes for different audiences: Adult, Teen, and Child. The system uses a fine-tuned DistilBERT model for offensive language detection and implements custom filtering logic for each audience level.
+
+# Features  
+
+## Three Content Filtering Modes:
+
+Adult Mode: Shows original text with offensive content highlighted  
+Teen Mode: Masks offensive words (e.g., "f***")  
+Child Mode: Fully censors offensive content (e.g., "[censored]")  
+
+## High Accuracy Detection:
+Fine-tuned DistilBERT model achieves 91.29% accuracy
+Trained on comprehensive hate speech dataset
+
+# Model Training 
+Dataset: Hate Speech and Offensive Language Dataset  (https://www.kaggle.com/datasets/thedevastator/hate-speech-and-offensive-language-detection)
+
+Model: DistilBERT (distilled version of BERT)
+
+Training: 6 epochs
+
+AdamW optimizer (learning rate 1e-5)
+
+Batch size: 16 (training), 32 (validation)
+
+Performance:
+
+**Validation Loss: 0.2884
+Accuracy: 91.29%
+F1 Score: 91.04%**
+
 ## Input
 ![image](https://github.com/user-attachments/assets/b4df1763-17f5-45f9-b36b-a573bb0824fc)
 Input Text:   
